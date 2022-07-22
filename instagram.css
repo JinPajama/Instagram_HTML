@@ -1,0 +1,519 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    border-bottom: 0.5px solid #ddd;
+    position: fixed;
+    background-color: white;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 63px;
+    z-index: 5;
+}
+.nav:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.nav {
+    box-sizing: border-box;
+    height: 60px;
+    width: 975px;
+    margin: 0 auto;
+}
+.nav .logo {
+    height: 100%;
+    padding: 14.5px;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.nav .search {
+    padding: 12px 0px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 30%;
+}
+.search_input {
+    position: relative;
+}
+
+.search_box {
+    position: absolute;
+    left: -41.25px; top: 51px;
+    width: 375px; height: 362px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgb(219, 219, 219);
+    border-radius: 5px;
+    z-index: 10;
+    padding: 12px 0 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+    display: none;
+}
+.search_box2 {
+    font-size: 14px;
+    color: #8E8E8E;
+    line-height: 320px;
+    text-align: center;
+    padding-right: 12px;
+}
+.search_bg {
+    background-color: #eee;
+    border-radius: 10px;
+ 
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+}
+
+.search_icon {
+    float: left;
+}
+
+.search_icon img {
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.search_bg div input {
+    background-color: #efefef;
+    border-style: none;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.search_bg div input:focus{
+    outline: none;
+}
+
+.nav .menu {
+    width: 35%;
+    overflow: visible;
+    padding: 19px 0px;
+    position: relative;
+}
+/* .nav .menu {
+    content: "";
+    display: block;
+    clear: both;
+} */
+.nav .my_profile2 {
+    position: absolute;
+    right: 0px; top: 60px;
+    width: 230px;
+    padding: 8px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgb(219, 219, 219);
+    border-radius: 5px;
+    z-index: 10;
+    display: none;
+}
+.nav .my_profile2 > div {
+    width: 100%; height: 37px;
+    box-sizing: border-box;
+    padding: 8px 16px;
+}
+.nav .my_profile2 img {
+    width: 16px; height: 16px;
+    margin: 2.5px 0px;
+    float: left;
+}
+.nav .my_profile2 p {
+    float: left;
+    font-size: 14px;
+    color: #262626;
+    margin-left: 14px;
+}
+.nav .my_profile2 .logout {
+    padding-top: 12px;
+    border-top: 1px solid rgb(219, 219, 219);
+}
+.menu img {
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+.menu #first_image {
+    margin-left: 78px;
+}
+.menu #me {
+    border: 0px solid #fff;
+    border-radius: 50%;
+    width: 24px; height: 24px;
+}
+.nav .logo img {
+    width: 103px;
+    height: 29px;
+}
+
+.nav > div {
+    display: block;
+    float: left;
+}
+
+.bod {
+    margin: 0 auto;
+    margin-top: 83px;
+    width: 850px;
+}
+
+.main {
+    margin-top: 300px;
+    width: 480px;
+    border: 1.5px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.main .story ul {
+    padding: 16px;
+
+}
+
+.main .story ul li {
+    display: inline-block;
+    width: 66px;
+    height: 66px;
+    text-align: center;
+}
+
+.main .story img {
+    width: 55px;
+    height: 55px;
+    padding: 0.5px;
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: purple red orangered #f90;
+    border-radius: 50%;
+}
+
+.main .story p {
+    font-size: 11px;
+    color: #333;
+}
+
+.post {
+    margin-top: 16px;
+    /* border: 1.5px solid #ddd; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 480px; height: 741px;
+}
+
+.p_header {
+    border: 1.5px solid #ddd;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+}
+
+.p_header > a > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: absolute;
+    left: 8px; top: 8px;
+}
+
+.p_header .p_name {
+
+    margin-left: 50px;
+    line-height: 48px;
+    position: relative;
+}
+.p_name a {
+    position: absolute;
+    right: 16px;
+}
+.p_name b {
+    font-size: 13px;
+    font-weight: 5px;
+    letter-spacing: 0.1px;
+    color: #444;
+    cursor: pointer;
+}
+.post p {
+    font-size: 15px;
+}
+.p_header .p_name img {
+    width: 16px;
+    height: 16px;
+}
+/* ================= */
+.swiper-slide { height: 480px;}
+.post .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper_l:after,
+.swiper_r:after {
+    font-size: 12px;
+    font-weight: 1000px;
+}
+.swiper_l, .swiper_r {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #000;
+    width: 22px;
+    height: 22px;
+}
+.custom {
+    overflow: visible;
+    position: relative;
+}
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -23px;
+    width: 30%;
+    position: absolute;
+    left: 168px;
+}
+/* ================= */
+.post_icon {
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 46px;
+    width: 100%;
+    padding: 0px 12px 6px 12px;
+}
+.post_icon_sec > a {
+    height: 40px; width: 40px;
+    float: left;
+}
+.post_icon_sec > a img {
+    padding: 8px;
+    width: 24px; height: 24px;
+}
+.post_icon_sec > a:first-child {width: 32px;}
+.post_icon_sec > a:first-child > img {
+    padding: 8px 8px 8px 0px;
+}
+.post_icon_sec > a:last-child {
+    width: 32px;
+    float: right;
+}
+.post .liked {
+    height: 32px;
+    padding: 0px 12px;
+}
+.post .p_icon {
+    float: left;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-top: 5px;
+}
+.post .liked > p {
+    margin-left: 5px;
+    margin-top: 5px;
+    float: left;
+    width: 300px;
+}
+.post p {
+    color: #262626;
+    font-size: 14px;
+}
+.post p b {
+    font-weight: 530px;
+    letter-spacing: 0.1px;
+    
+    color: #262626;
+    cursor: pointer;
+}
+#comment {
+    text-decoration: none;
+    color: #8E8E8E;
+}
+.post .p_text {
+    padding: 0px 12px;
+    height: 26px;
+}
+.post .p_text > small {
+    font-size: 9px;
+    color: #8E8E8E;
+}
+.post .post_comment {
+    box-sizing: border-box;
+    border-top: 1.5px solid #ddd;
+    border-collapse: collapse;
+    height: 49px;
+    padding: 4px 12px;
+}
+.p_c_border{
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.post .post_comment img {
+    display: block;
+    width: 24px;height: 24px;
+    padding: 8px 12px 8px 0px;
+    float: left;
+}
+.post .post_comment input {
+    font-size: 14px;
+    line-height: 40px;
+    border: none;
+}
+/* inout 눌렀을 때 박스 라인 안뜨게 */
+.post .post_comment input:focus{
+    outline: none;
+}
+.p_c_border > .p_c_border_r {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: 1000;
+    color: #0095f6;
+    line-height: 40px;
+    text-decoration: none;
+}
+.p_footer {
+    border: 1.5px solid #ddd;
+    border-radius: 0 0 10px 10px;
+}
+
+.bod {
+    position: relative;
+}
+
+.info {
+    width: 320px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.info .profile {
+    height: 66px;
+}
+.info .profile_img_box {
+    box-sizing: border-box;
+    height: 66px; width: 66px;
+    padding: 5px;
+    display: inline-block;
+    float: left;
+}
+.info .profile_img {
+    width: 56px; height: 56px;
+    border-radius: 50%;
+}
+.info .profile .profile_name {
+    margin: 12px 0 0 12px;
+    height: 54px;
+    float: left;
+}
+.info .profile .profile_name a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #262626;
+    font-weight: 1000;
+}
+.info .profile .profile_name div {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+.info .profile .profile_r {
+    height: 100%;
+    line-height: 66px;
+    font-weight: 800;
+    font-size: 12px;
+    color: #0095f6;
+    cursor: pointer;
+    float: right;
+}
+.rec {
+    height: 42px;
+    line-height: 42px;
+}
+.rec1 {
+    font-size: 14px;
+    color: #8e8e8e;
+    float: left;
+}
+.rec2 {
+    font-size: 12px;
+    color: #262626;
+    float:  right;
+    cursor: pointer;
+}
+.r_p {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 8px 16px;
+}
+.r_p_img {
+
+}
+.r_p_img > img {
+    width: 32px; height: 32px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    border-radius: 50%;    
+    float: left;
+}
+.r_p_name {
+    float: left;
+    margin-left: 15px;
+    height: 32px;
+}
+.r_p_name a {
+    font-size: 14px;
+    width: 200px;
+    color: #262626;
+    font-weight: 600;
+    text-decoration: none;
+    float: left;
+}
+.r_p_name a:hover {
+    text-decoration: underline;
+}
+.r_p_name div {
+    font-size: 12px;
+    color: #8e8e8e;
+    width: 200px;
+    float:inline-start;
+}
+.r_p_fol {
+    float: right;
+    line-height: 32px;
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.copyright  {
+    margin-top: 28px;
+    width: 100%;
+}
+.copyright ul li { 
+    display: inline-block;
+    font-size: 12px;
+    color: #c7c7c7;
+    cursor: pointer;
+}
+.cpr_an{
+    margin-top: 28px;
+    width: 100%;
+    font-size: 12px;
+    color: #c7c7c7;
+    cursor: pointer;
+}
+/*==========post 2============*/
+.post3 {
+    margin-bottom: 50px;
+}
+/*========================*/
