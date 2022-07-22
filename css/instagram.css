@@ -6,11 +6,12 @@
 .header {
     border-bottom: 0.5px solid #ddd;
     position: fixed;
+    box-sizing: border-box;
     background-color: white;
     left: 0;
     top: 0;
     width: 100%;
-    height: 63px;
+    height: 60px;
     z-index: 5;
 }
 .nav:after {
@@ -26,11 +27,15 @@
 }
 .nav .logo {
     height: 100%;
-    padding: 14.5px;
+    padding: 12px 20px;
     width: 35%;
     box-sizing: border-box;
 }
-
+.nav .logo > img {
+    width: 103px;
+    height: 29px;
+    margin: 7px 0px 0 0;
+}
 .nav .search {
     padding: 12px 0px;
     box-sizing: border-box;
@@ -43,7 +48,7 @@
 
 .search_box {
     position: absolute;
-    left: -41.25px; top: 51px;
+    left: -49.25px; top: 48px;
     width: 375px; height: 362px;
     background-color: #fff;
     box-shadow: 0px 0px 3px 1px rgb(219, 219, 219);
@@ -55,6 +60,16 @@
     color: #262626;
     display: none;
 }
+.search_box .diamond {
+    padding: 0px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid rgb(219, 219, 219);
+    position: absolute;
+    left: 196px; top: -9px;
+}
 .search_box2 {
     font-size: 14px;
     color: #8E8E8E;
@@ -63,7 +78,7 @@
     padding-right: 12px;
 }
 .search_bg {
-    background-color: #eee;
+    background-color: #efefef;
     border-radius: 10px;
  
     width: 100%;
@@ -85,7 +100,7 @@
 .search_bg div input {
     background-color: #efefef;
     border-style: none;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: 15px;
 }
 
@@ -104,9 +119,19 @@
     display: block;
     clear: both;
 } */
+.nav .my_profile2 .diamond {
+    position: absolute;
+    padding: 0px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid rgb(219, 219, 219);
+    top: -8px; right: 34px;
+}
 .nav .my_profile2 {
     position: absolute;
-    right: 0px; top: 60px;
+    right: 0px; top: 58px;
     width: 230px;
     padding: 8px 0px;
     background-color: #fff;
@@ -150,10 +175,7 @@
     border-radius: 50%;
     width: 24px; height: 24px;
 }
-.nav .logo img {
-    width: 103px;
-    height: 29px;
-}
+
 
 .nav > div {
     display: block;
@@ -454,9 +476,6 @@
     width: 100%;
     height: 48px;
     padding: 8px 16px;
-}
-.r_p_img {
-
 }
 .r_p_img > img {
     width: 32px; height: 32px;

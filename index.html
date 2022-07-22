@@ -17,7 +17,9 @@
     <section>
         <div class="header">
             <nav class="nav">
-                <div class="logo"><a href="#"><img src="img/instagram_text_logo.png" alt="인스타그램"></a></div>
+                <div class="logo">
+                    <img src="img/instagram_text_logo.png" alt="인스타그램">
+                </div>
                 <div class="search">
                     <div class="search_bg">
                         <div class="search_icon">
@@ -28,6 +30,7 @@
                             <input type="text" placeholder="검색">
                             <div class="search_box"> 
                                     최근 검색 항목
+                                <div class="diamond"></div>
                                 <p class="search_box2">
                                     최근 검색 내역 없음.
                                 </p>
@@ -37,7 +40,7 @@
                 </div>
 
                 <div class="menu">
-                    <div><a href="#"><img id="first_image" src="img/home.png" alt=""></a></div>
+                    <div><a href="#"><img id="first_image" src="img/home2.png" alt=""></a></div>
                     <div><a href="#"><img src="img/send_message.png" alt=""></a></div>
                     <div><a href="#"><img src="img/post.png" alt=""></a></div>
                     <div><a href="#"><img src="img/compass.png" alt=""></a></div>
@@ -50,6 +53,7 @@
         
 
                     <div class="my_profile2">
+                        <div class="diamond"></div>
                         <div><img src="img/user.png" alt=""><p>프로필<p></div>
                         <div><img src="img/mark.png" alt=""><p>저장됨<p></div>
                         <div><img src="img/settings.png" alt=""><p>설정<p></div>
@@ -399,13 +403,10 @@
         
         $(".search_input input").focus(function() {
             $(".search_box").show();
-            console.log('show');
         })
         $(".search_input input").focusout(function() {
-            $(".search_box").hide();
-            console.log('hide');
+            $(".search_box").slideUp(200);
         })
-        
 
         var i = 0;
         document.querySelector("#me").onclick = function() {
@@ -413,21 +414,25 @@
 
             if(i%2==0){
                 this.style.border = "1px solid #000";
-                document.getElementById("first_image").src = "img/home2.png";
+                document.getElementById("first_image").src = "img/home.png";
                 document.querySelector(".my_profile2").style.display = "block";
             }
-            // else {
-            //     this.style.border ="none";
-            //     document.getElementById("first_image").src = "img/home.png";
-            //     $(".my_profile2").slideUp(300);
-            // }  i++;
+            else {
+                this.style.border ="none";
+                document.getElementById("first_image").src = "img/home2.png";
+                $(".my_profile2").slideUp(200);
+            }
+            i++;
+            
+            $("body").click(function () {
+                document.querySelector("#me").style.border ="none";
+                document.getElementById("first_image").src = "img/home2.png";
+                $(".my_profile2").slideUp(200);
+                i++;
+            })
         }
 
 
-        $("body").click(function() {
-
-            $(".my_profile2").slideUp(300);
-        })
         
 
 
