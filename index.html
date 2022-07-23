@@ -69,11 +69,11 @@
             <main class="main">
                 <div class="story">
                     <ul>
-                        <li><a href="#"><img src="img/profile.png" alt=""></a><p>sales_man</p></li>
-                        <li><a href="#"><img src="img/profile (1).png" alt=""></a><p>codragon</p></li>
-                        <li><a href="#"><img src="img/girl (1).png" alt=""></a><p>smilia</p></li>
-                        <li><a href="#"><img src="img/athlete.png" alt=""></a><p>ski.is.life</p></li>
-                        <li><a href="#"><img src="img/girl.png" alt=""></a><p>stxdxnt</p></li>
+                        <li><a href="#"><img src="img/it.jpg" alt=""></a><p>sakura_man</p></li>
+                        <li><a href="#"><img src="img/it2.jpg" alt=""></a><p>codragon</p></li>
+                        <li><a href="#"><img src="img/it3.jpg" alt=""></a><p>pxrschx</p></li>
+                        <li><a href="#"><img src="img/it4.jpg" alt=""></a><p>music.is.life</p></li>
+                        <li><a href="#"><img src="img/it5.jpg" alt=""></a><p>stxdxnt</p></li>
                         <li><a href="#"><img src="img/reference.jpg" alt=""></a><p>anhanryang</p></li>
                     </ul>
                 </div>
@@ -108,8 +108,9 @@
                 <div class="p_footer">
                     <div class="post_icon">
                         <div class="post_icon_sec">
-                            <a href="#"><img src="img/heart_line.png" alt="">
-                            <img src="img/red_heart.png" alt=""></a>
+                            <a href="#" onclick="return false;">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
@@ -167,8 +168,9 @@
                 <div class="p_footer">
                     <div class="post_icon">
                         <div class="post_icon_sec">
-                            <a href="#"><img src="img/heart_line.png" alt="">
-                            <img src="img/red_heart.png" alt=""></a>
+                            <a href="#" onclick="return false;">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
@@ -224,9 +226,10 @@
                 
                 <div class="p_footer">
                     <div class="post_icon">
-                        <div class="post_icon_sec">
-                            <a href="#"><img src="img/heart_line.png" alt="">
-                            <img src="img/red_heart.png" alt=""></a>
+                        <div class="post_icon_sec" onclick="return false;">
+                            <a href="#">
+                                <img class="red_heart" src="img/heart_line.png" alt="">
+                            </a>
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
@@ -276,10 +279,10 @@
 
                 <div class="r_p">
                     <div class="r_p_img">
-                        <img src="img/it5.jpg" alt="">
+                        <img src="img/it6.jpg" alt="">
                     </div>
                     <div class="r_p_name">
-                        <a href="#">sebi_nse_bin</a>
+                        <a href="#">mooshoo</a>
                         <div>instagram 신규 가입</div>
                     </div>
                     <span class="r_p_fol">
@@ -289,10 +292,10 @@
 
                 <div class="r_p">
                     <div class="r_p_img">
-                        <img src="img/it1.jpg" alt="">
+                        <img src="img/it7.jpg" alt="">
                     </div>
                     <div class="r_p_name">
-                        <a href="#">kxyxjx_</a>
+                        <a href="#">lit_prince</a>
                         <div>wlshyuk님 외 1명이 팔로우합니다</div>
                     </div>
                     <span class="r_p_fol">
@@ -302,10 +305,10 @@
 
                 <div class="r_p">
                     <div class="r_p_img">
-                        <img src="img/it2.jpg" alt="">
+                        <img src="img/it8.jpg" alt="">
                     </div>
                     <div class="r_p_name">
-                        <a href="#">dldydtn1017_</a>
+                        <a href="#">wine_999</a>
                         <div>wlshyuk님 외 1명이 팔로우합니다</div>
                     </div>
                     <span class="r_p_fol">
@@ -315,10 +318,10 @@
 
                 <div class="r_p">
                     <div class="r_p_img">
-                        <img src="img/it3.jpg" alt="">
+                        <img src="img/it9.jpg" alt="">
                     </div>
                     <div class="r_p_name">
-                        <a href="#">dobonggomtang</a>
+                        <a href="#">flolist_jin</a>
                         <div>dldydtn1017_님이 팔로우합니다</div>
                     </div>
                     <span class="r_p_fol">
@@ -328,10 +331,10 @@
 
                 <div class="r_p">
                     <div class="r_p_img">
-                        <img src="img/it4.png" alt="">
+                        <img src="img/it10.jpg" alt="">
                     </div>
                     <div class="r_p_name">
-                        <a href="#">parkyeonpokdo</a>
+                        <a href="#">naksan_night</a>
                         <div>kxyxjx_님 외 2명이 팔로우합니다</div>
                     </div>
                     <span class="r_p_fol">
@@ -375,6 +378,7 @@
     </section>
 
     <script>
+        /* =======swiper JS=============*/
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal', //or vertical
@@ -399,8 +403,9 @@
                 el: '.swiper-scrollbar',
             },*/
         });
-
+        /* =======swiper JS end==========*/
         
+        /* header searchbox */
         $(".search_input input").focus(function() {
             $(".search_box").show();
         })
@@ -408,6 +413,7 @@
             $(".search_box").slideUp(200);
         })
 
+        /* header mini profile */
         var i = 0;
         document.querySelector("#me").onclick = function() {
             event.stopPropagation();
@@ -430,6 +436,44 @@
                 $(".my_profile2").slideUp(200);
                 i++;
             })
+        }
+
+
+        
+        /* post like onclick change */
+        //src="img/heart_line.png" img/red_heart.png
+        var i = 0;
+        var like = document.querySelectorAll(".red_heart");
+        like[0].onclick = function() {
+            if(i%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            i++;
+        }
+        var j = 0;
+        var like = document.querySelectorAll(".red_heart");
+        like[1].onclick = function() {
+            if(j%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            j++;
+        }
+        var k = 0;
+        var like = document.querySelectorAll(".red_heart");
+        like[2].onclick = function() {
+            if(k%2==0){
+                this.src = "img/red_heart.png";
+            }
+            else {
+                this.src = "img/heart_line.png";
+            } 
+            k++;
         }
 
 

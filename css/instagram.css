@@ -425,7 +425,7 @@
     box-sizing: border-box;
     height: 66px; width: 66px;
     padding: 5px;
-    display: inline-block;
+    display: block;
     float: left;
 }
 .info .profile_img {
