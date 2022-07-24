@@ -107,7 +107,18 @@
 .search_bg div input:focus{
     outline: none;
 }
-
+.search_input .x_btn {
+    width: 15px; height: 15px;
+    background-color: #c7c7c7;
+    position: absolute;
+    right: 10px; top: 10px;
+    border-radius: 50%;
+    display: none;
+}
+.search_input .x_btn > img{
+    width: 7px; height: 7px;
+    margin: 0px 0px 13px 4px;
+}
 .nav .menu {
     width: 35%;
     overflow: visible;
@@ -196,19 +207,15 @@
     border-radius: 10px;
     margin-top: 15px;
 }
-
 .main .story ul {
     padding: 16px;
-
 }
-
 .main .story ul li {
     display: inline-block;
     width: 66px;
     height: 66px;
     text-align: center;
 }
-
 .main .story img {
     width: 55px;
     height: 55px;
@@ -218,12 +225,20 @@
     border-color: purple red orangered #f90;
     border-radius: 50%;
 }
-
 .main .story p {
     font-size: 11px;
     color: #333;
 }
-
+.next_button {
+    background-color: white;
+    border: none;
+    width: 22px; height: 22px;
+    box-shadow: 0px 0px 5px 1px rgb(219, 219, 219);
+    border-radius: 50%;
+    position: absolute; 
+    top: 48px; left: 449px;
+    cursor: pointer;
+}
 .post {
     margin-top: 16px;
     /* border: 1.5px solid #ddd; */
@@ -294,6 +309,14 @@
     overflow: visible;
     position: relative;
 }
+
+.custom1 .dblike, .custom2 .dblike, .custom3 .dblike{
+    position: absolute;
+    top: 186px; left: 186px;
+    clip: rect(20px 108px 108px 20px);
+    z-index: 10;
+    display: none;
+}
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: -23px;
     width: 30%;
@@ -324,6 +347,7 @@
     width: 32px;
     float: right;
 }
+
 .post .liked {
     height: 32px;
     padding: 0px 12px;

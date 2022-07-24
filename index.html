@@ -27,7 +27,9 @@
                            
                         </div>
                         <div class="search_input">
+
                             <input type="text" placeholder="검색">
+
                             <div class="search_box"> 
                                     최근 검색 항목
                                 <div class="diamond"></div>
@@ -35,6 +37,11 @@
                                     최근 검색 내역 없음.
                                 </p>
                             </div>
+
+                            <div class="x_btn">
+                                <img src="/img/x_mark.png" alt="">
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -55,7 +62,7 @@
                     <div class="my_profile2">
                         <div class="diamond"></div>
                         <div><img src="img/user.png" alt=""><p>프로필<p></div>
-                        <div><img src="img/mark.png" alt=""><p>저장됨<p></div>
+                        <div><img src="img/store.png" alt=""><p>저장됨<p></div>
                         <div><img src="img/settings.png" alt=""><p>설정<p></div>
                         <div><img src="img/change.png" alt=""><p>계정 전환<p></div>
                         <div class="logout"><p>로그아웃</p></div>
@@ -75,6 +82,7 @@
                         <li><a href="#"><img src="img/it4.jpg" alt=""></a><p>music.is.life</p></li>
                         <li><a href="#"><img src="img/it5.jpg" alt=""></a><p>stxdxnt</p></li>
                         <li><a href="#"><img src="img/reference.jpg" alt=""></a><p>anhanryang</p></li>
+                        <button class="next_button">></button>
                     </ul>
                 </div>
             </main>
@@ -89,9 +97,11 @@
                 </div>
 
                 <!-- Slider main container -->
-                <div class="swiper custom">
+                <div class="swiper custom custom1">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="img/wls.jpg" alt="이미지"></div>
                         <div class="swiper-slide"><img src="img/wls2.jpg" alt="이미지"></div>
@@ -114,7 +124,7 @@
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
-                            <a href="#"><img src="img/mark.png" alt=""></a>
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
                         </div>
                     </div>
 
@@ -149,9 +159,11 @@
                 </div>
 
                 <!-- Slider main container -->
-                <div class="swiper custom">
+                <div class="swiper custom custom2">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="img/wls4.jpg" alt="이미지"></div>
                         <div class="swiper-slide"><img src="img/wls5.jpg" alt="이미지"></div>
@@ -174,7 +186,7 @@
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
-                            <a href="#"><img src="img/mark.png" alt=""></a>
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
                         </div>
                     </div>
 
@@ -209,9 +221,11 @@
                 </div>
 
                 <!-- Slider main container -->
-                <div class="swiper custom">
+                <div class="swiper custom custom3">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
+                        <!-- Liked -->
+                        <img class="dblike" src="/img/iconsrc.png" alt="">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="img/wls7.jpg" alt="이미지"></div>
                         <div class="swiper-slide"><img src="img/wls9.jpg" alt="이미지"></div>
@@ -233,7 +247,7 @@
                             <a href="#"><img src="img/textbox.png" alt=""></a>
                             <a href="#"><img src="img/send_message.png" alt=""></a> 
                         
-                            <a href="#"><img src="img/mark.png" alt=""></a>
+                            <a href="#" onclick="return false;"><img class="store" src="img/store.png" alt=""></a>
                         </div>
                     </div>
 
@@ -296,7 +310,7 @@
                     </div>
                     <div class="r_p_name">
                         <a href="#">lit_prince</a>
-                        <div>wlshyuk님 외 1명이 팔로우합니다</div>
+                        <div>회원님을 위한 추천</div>
                     </div>
                     <span class="r_p_fol">
                         팔로우
@@ -309,7 +323,7 @@
                     </div>
                     <div class="r_p_name">
                         <a href="#">wine_999</a>
-                        <div>wlshyuk님 외 1명이 팔로우합니다</div>
+                        <div>회원님을 팔로우합니다</div>
                     </div>
                     <span class="r_p_fol">
                         팔로우
@@ -322,7 +336,7 @@
                     </div>
                     <div class="r_p_name">
                         <a href="#">flolist_jin</a>
-                        <div>dldydtn1017_님이 팔로우합니다</div>
+                        <div>회원님을 위한 추천</div>
                     </div>
                     <span class="r_p_fol">
                         팔로우
@@ -335,7 +349,7 @@
                     </div>
                     <div class="r_p_name">
                         <a href="#">naksan_night</a>
-                        <div>kxyxjx_님 외 2명이 팔로우합니다</div>
+                        <div>회원님을 위한 추천</div>
                     </div>
                     <span class="r_p_fol">
                         팔로우
@@ -384,6 +398,7 @@
             direction: 'horizontal', //or vertical
             loop: false,
 
+            allowTouchMove: false,
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
@@ -408,9 +423,16 @@
         /* header searchbox */
         $(".search_input input").focus(function() {
             $(".search_box").show();
+            $(".search_icon").hide();
+            $(".x_btn").show();
+        })
+        $(".x_btn").click(function() {
+            $(this).hide();
         })
         $(".search_input input").focusout(function() {
             $(".search_box").slideUp(200);
+            $(".search_icon").show();
+            $(".x_btn").hide();
         })
 
         /* header mini profile */
@@ -437,10 +459,9 @@
                 i++;
             })
         }
-
-
         
-        /* post like onclick change */
+        /* post like onclick event */
+        /* post dbclick event */
         //src="img/heart_line.png" img/red_heart.png
         var i = 0;
         var like = document.querySelectorAll(".red_heart");
@@ -453,8 +474,15 @@
             } 
             i++;
         }
+        $(".custom1").dblclick(function() {
+            like[0].src = "img/red_heart.png";
+            i=1;
+            $(".custom1 .dblike").fadeIn(200);
+            $(".custom1 .dblike").delay(600);
+            $(".custom1 .dblike").fadeOut(300);
+        })
+
         var j = 0;
-        var like = document.querySelectorAll(".red_heart");
         like[1].onclick = function() {
             if(j%2==0){
                 this.src = "img/red_heart.png";
@@ -464,8 +492,19 @@
             } 
             j++;
         }
+        $(".custom2").dblclick(function() {
+            like[1].src = "img/red_heart.png";
+            j=1;
+        })
+        $(".custom2").dblclick(function() {
+            like[0].src = "img/red_heart.png";
+            j=1;
+            $(".custom2 .dblike").fadeIn(200);
+            $(".custom2 .dblike").delay(600);
+            $(".custom2 .dblike").fadeOut(300);
+        })
+
         var k = 0;
-        var like = document.querySelectorAll(".red_heart");
         like[2].onclick = function() {
             if(k%2==0){
                 this.src = "img/red_heart.png";
@@ -475,7 +514,44 @@
             } 
             k++;
         }
+        $(".custom3").dblclick(function() {
+            like[2].src = "img/red_heart.png";
+            k=1;
+        })
+        $(".custom3").dblclick(function() {
+            like[0].src = "img/red_heart.png";
+            k=1;
+            $(".custom3 .dblike").fadeIn(200);
+            $(".custom3 .dblike").delay(600);
+            $(".custom3 .dblike").fadeOut(300);
+        })
+        //post store click event
+        var store = document.querySelectorAll(".store");
+        var g = 0, f = 0, d = 0;
+        store[0].onclick = () => {
+            if(g%2==0){
+                store[0].src = "img/stored.png";}
+            else{
+                store[0].src = "img/store.png";}
+            g++;
+        }
+        store[1].onclick = () => {
+            if(f%2==0){
+                store[1].src = "img/stored.png";}
+            else{
+                store[1].src = "img/store.png";}
+            f++;
+        }
+        store[2].onclick = () => {
+            if(d%2==0){
+                store[2].src = "img/stored.png";}
+            else{
+                store[2].src = "img/store.png";}
+            d++;
+        }
 
+        
+        
 
         
 
