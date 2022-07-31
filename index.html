@@ -228,7 +228,7 @@
                         <img class="dblike" src="/img/iconsrc.png" alt="">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="img/wls7.jpg" alt="이미지"></div>
-                        <div class="swiper-slide"><img src="img/wls9.jpg" alt="이미지"></div>
+                        <div class="swiper-slide swiper-slide2"><img src="img/wls9.jpg" alt="이미지"></div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -497,7 +497,7 @@
             j=1;
         })
         $(".custom2").dblclick(function() {
-            like[0].src = "img/red_heart.png";
+            like[1].src = "img/red_heart.png";
             j=1;
             $(".custom2 .dblike").fadeIn(200);
             $(".custom2 .dblike").delay(600);
@@ -519,12 +519,13 @@
             k=1;
         })
         $(".custom3").dblclick(function() {
-            like[0].src = "img/red_heart.png";
+            like[2].src = "img/red_heart.png";
             k=1;
             $(".custom3 .dblike").fadeIn(200);
             $(".custom3 .dblike").delay(600);
             $(".custom3 .dblike").fadeOut(300);
         })
+
         //post store click event
         var store = document.querySelectorAll(".store");
         var g = 0, f = 0, d = 0;
