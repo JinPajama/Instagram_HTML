@@ -8,7 +8,7 @@ You can test {
 
 search box & header profile click event,
 
-post double click event (Liked animation),
+post double click event (Liked animation -< It's currently error now. It works at my VS code but I think something wrong during upload on Github),
 
 post like & store icon click event,
 
