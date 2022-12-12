@@ -6,13 +6,15 @@ View the page from Evironment on repository's right side!
 
 You can test { 
 
-search box & header profile click event,
+Search box & header profile click event,
 
-post double click event (Liked animation -< It's currently error now. It works at my VS code but I think something wrong during upload on Github),
+Post double click event (Liked animation -< It's currently error now. It works at my VS code but I think something wrong during upload on Github),
+
+Swipe to go to next picture ( Swiper API )
 
 post like & store icon click event,
 
 }
 
-pretty funny and learned a lot.
-Thanks.
+It was great project for understand Web frontend.
+Thank you.
